@@ -14,7 +14,7 @@ class Transformer
     /**
      * @throws EdiTransformerNotValidOptionException
      */
-    public function transform($xmlString, $format = self::JSON_FORMAT)
+    public function transform($xmlString, $format = self::JSON_FORMAT): string
     {
         $xml = simplexml_load_string($xmlString);
 
